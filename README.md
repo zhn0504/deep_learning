@@ -1,75 +1,66 @@
-<header>
+# 深度学习学习历程记录
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+## 1. 项目概述
+本代码库旨在记录我在深度学习领域的学习过程，涵盖从基础理论到实际项目应用的各个方面。通过不断更新和完善代码，我希望能够系统地整理所学知识，同时也为其他对深度学习感兴趣的人提供参考。
 
-# Introduction to GitHub
+## 2. 目录结构
+```plaintext
+.
+├── Deep_Learning_Code/           # 包含理论学习和实验代码
+│   ├── Chapter-01/
+    ├── Chapter-02/
+├── datasets/            # 存放使用的数据集（部分大文件可能通过百度网盘链接下载）
+├── README.md            # 项目说明文件
+└── requirements.txt     # 项目依赖库列表
+```
 
-_Get started using GitHub in less than an hour._
+## 3. 学习内容 
+此库涵盖了丰富的内容，具体如下：  
 
-</header>
+### 基础入门部分  
+- 介绍深度学习课程的理念，让学习者了解课程的设计思路和目标。  
+- 讲解深度学习相关的技术栈，帮助学习者构建知识体系基础。  
+- 对线性代数、微积分、概率等数学知识进行回顾，为后续深度学习的学习筑牢数学根基。  
+- 详细阐述 CUDA + Anaconda 深度学习环境配置、conda 实用命令、Jupyter Notebook 快速上手以及深度学习库 PyTorch 安装等内容，助力学习者搭建开发环境。  
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+### 神经网络原理与实践  
+- 深入剖析深度神经网络原理，包括神经网络的基本原理、多层感知机（MLP）结构。  
+- 讲解前向传播和反向传播机制，以及多层感知机的代码实现。  
+- 探讨回归问题和分类问题，包含线性回归和多分类的代码实现。  
+- 分析训练过程中的常见问题，如过拟合和欠拟合，介绍对应的应对策略，包括正则化、Dropout 及其代码实现，还涉及梯度消失和梯度爆炸问题以及模型文件的读写操作。  
+- 系统讲解梯度下降算法及其多种变体，如随机梯度下降法、小批量梯度下降法、动量法、AdaGrad 算法、RMSProp/Adadelta 算法、Adam 算法等，并有梯度下降算法示例以及学习率调节器相关内容。  
 
-## Step 1: Create a branch
+### 卷积神经网络（CNN）  
+- 从基础的全连接层问题引出图像卷积概念，介绍卷积层及其常见操作，以及池化层（Pooling）。  
+- 给出卷积神经网络（LeNet）的代码实现，并深入讲解复杂的经典 CNN 模型，如 AlexNet、VGGNet、GoogleNet、残差网络（ResNet）、稠密连接网络（DenseNet） 。  
 
-_Welcome to "Introduction to GitHub"! :wave:_
+### 循环神经网络（RNN）  
+- 针对序列数据，介绍序列建模、文本数据预处理等基础知识。  
+- 讲解循环神经网络原理、随时间反向传播算法以及基础 RNN 的代码实现。  
+- 探讨长期依赖问题，并介绍复杂循环神经网络结构，如深度循环神经网络、双向循环神经网络、门控循环单元（GRU）、长短时记忆网络（LSTM）及其代码实现。  
+- 还涉及编码器 - 解码器网络、序列到序列学习代码实现、束搜索算法以及机器翻译与相关数据集等内容。  
 
-**What is GitHub?**: GitHub is a collaboration platform that uses _[Git](https://docs.github.com/get-started/quickstart/github-glossary#git)_ for versioning. GitHub is a popular place to share and contribute to [open-source](https://docs.github.com/get-started/quickstart/github-glossary#open-source) software.
-<br>:tv: [Video: What is GitHub?](https://www.youtube.com/watch?v=pBy1zgt0XPc)
+### 注意力神经网络  
+- 阐述注意力机制的基本概念、计算方式，包括键值对注意力和多头注意力、自注意力机制。  
+- 给出注意力池化及代码实现，详细讲解 Transformer 模型及其代码实现。  
+- 进一步介绍复杂注意力神经网络模型，如 BERT 模型、GPT 系列（GPT2/GPT3）、T5 模型、ViT 模型、Swin Transformer 以及 GPT 代码实现等内容。  
 
-**What is a repository?**: A _[repository](https://docs.github.com/get-started/quickstart/github-glossary#repository)_ is a project containing files and folders. A repository tracks versions of files and folders. For more information, see "[About repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)" from GitHub Docs.
+### 生成模型与应用  
+- 介绍深度生成模型相关知识，如蒙特卡洛方法、变分推断、变分自编码器、生成对抗网络（GAN）、Diffusion 扩散模型。  
+- 包含计算机视觉领域的项目实战，如自定义数据增强、迁移学习、经典视觉数据集应用，以及“猫狗大战（Dogs vs. Cats）”项目实战。  
+- 在自然语言处理方面，涉及词嵌入（如 word2vec）、词义搜索、预训练语言模型、HuggingFace 库介绍、经典 NLP 数据集以及“电影评论情感分析”项目实战。  
 
-**What is a branch?**: A _[branch](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)_ is a parallel version of your repository. By default, your repository has one branch named `main` and it is considered to be the definitive branch. Creating additional branches allows you to copy the `main` branch of your repository and safely make any changes without disrupting the main project. Many people use branches to work on specific features without affecting any other parts of the project.
+### 前沿内容  
+- 介绍多模态 AI 及内容生成相关模型，如 Instruct GPT（ChatGPT）、Dall - E 模型。  
+- 分析深度学习最新发展趋势，并给出下一步学习建议。  
 
-Branches allow you to separate your work from the `main` branch. In other words, everyone's work is safe while you contribute. For more information, see "[About branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)".
-
-**What is a profile README?**: A _[profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)_ is essentially an "About me" section on your GitHub profile where you can share information about yourself with the community on GitHub.com. GitHub shows your profile README at the top of your profile page. For more information, see "[Managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)".
-
-![profile-readme-example](/images/profile-readme-example.png)
-
-### :keyboard: Activity: Your first branch
-
-1. Open a new browser tab and navigate to your newly made repository. Then, work on the steps in your second tab while you read the instructions in this tab.
-2. Navigate to the **< > Code** tab in the header menu of your repository.
-
-   ![code-tab](/images/code-tab.png)
-
-3. Click on the **main** branch drop-down.
-
-   ![main-branch-dropdown](/images/main-branch-dropdown.png)
-
-4. In the field, name your branch `my-first-branch`. In this case, the name must be `my-first-branch` to trigger the course workflow.
-5. Click **Create branch: my-first-branch** to create your branch.
-
-   ![create-branch-button](/images/create-branch-button.png)
-
-   The branch will automatically switch to the one you have just created.
-   The **main** branch drop-down bar will reflect your new branch and display the new branch name.
-
-6. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+## 4. 联系信息
+若你有任何问题或想交流深度学习相关话题，可通过以下方式联系我：
+- **邮箱**：[zhn0504@outlook.com](mailto:zhn0504@outlook.com)
+- **GitHub**：欢迎访问我的 [GitHub 主页](https://github.com/zhn0504)。在这个代码库的 GitHub 仓库页面，你可以进行以下操作：
+    - **查看代码**：直接在仓库中浏览代码文件，了解项目的具体实现。
+    - **提交 Issue**：如果发现代码存在问题、有功能需求或者有任何疑问，都可以在 [Issues 页面](https://github.com/your_github_username/your_repo_name/issues) 提交新的 Issue。
+    - **发起 Pull Request**：若你对代码有改进建议，欢迎 Fork 本仓库，进行修改后发起 Pull Request，我们一起完善这个项目。
+ 
+## 5. 版权声明
+本项目中的代码和文档仅供学习和参考使用，未经授权，请勿用于商业用途。
