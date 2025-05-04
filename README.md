@@ -1,69 +1,70 @@
-# 深度学习学习历程记录
+# Introduction to Deep Learning
 
-## 1. 项目概述
-本代码库旨在记录我在深度学习领域的学习过程，涵盖从基础理论到实际项目应用的各个方面。通过不断更新和完善代码，我希望能够系统地整理所学知识，同时也为其他对深度学习感兴趣的人提供参考。
+## 1. Project Overview
+This code repository aims to document my learning journey in the field of deep learning, covering various aspects from fundamental theories to practical project applications. By continuously updating and refining the code, I hope to systematically organize the knowledge I've acquired. Meanwhile, it can also serve as a reference for others who are interested in deep learning.
 
-## 2. 目录结构
+## 2. Directory Structure
 ```plaintext
 .
-├── Deep_Learning_Code/  # 包含理论学习和实验代码
-│   ├── Chapter-01/
+├── Deep_Learning_Code/  # Contains theoretical learning and experimental codes
+│   ├── Chapter-00/
+    ├── Chapter-01/
     ├── Chapter-02/
     ...
-├── datasets/            # 存放使用的数据集（部分大文件可能通过百度网盘链接下载）
-├── README.md            # 项目说明文件
-└── requirements.txt     # 项目依赖库列表
+├── datasets/            # Datasets (Some large files are downloaded via Baidu Netdisk links)
+├── README.md            # Project description file
+└── requirements.txt     # List of project dependency libraries
 ```
 
-## 3. 学习内容 
-此库涵盖以下内容：    
+## 3. Learning Content
+This repository covers the following content:  
 
-### 神经网络原理与实践  
-Chapter 01
-- 神经网络的基本原理、多层感知机（MLP）结构。  
-- 前向传播和反向传播机制。  
-- 回归问题和分类问题，包含线性回归和多分类。
+### Principles and Practices of Neural Networks
+### Chapter 01 
+- The basic principles of neural networks and the structure of the Multi-Layer Perceptron (MLP).
+- The mechanisms of forward propagation and backpropagation. 
+- Regression and classification problems, including linear regression and multi-class classification.
   
-Chapter 02, 03
-- 训练过程中的常见问题，如过拟合和欠拟合，介绍对应的应对策略，包括正则化、Dropout 及其代码实现，还涉及梯度消失和梯度爆炸问题以及模型文件的读写操作。  
-- 梯度下降算法及其多种变体，如随机梯度下降法、小批量梯度下降法、动量法、AdaGrad 算法、RMSProp/Adadelta 算法、Adam 算法等，并有梯度下降算法示例以及学习率调节器相关内容。  
+### Chapter 02, 03
+- Common problems during the training process, such as overfitting and underfitting. Corresponding countermeasures are introduced, including regularization, Dropout and their code implementations. It also covers the problems of vanishing gradients and exploding gradients, as well as the read and write operations of model files.
+- Gradient descent algorithms and their various variants, such as Stochastic Gradient Descent, Mini-Batch Gradient Descent, Momentum Method, AdaGrad Algorithm, RMSProp/Adadelta Algorithm, Adam Algorithm, etc. There are also examples of gradient descent algorithms and related content of learning rate schedulers.
 
-### 卷积神经网络（CNN）  
-Chapter 04
-- 卷积层及其常见操作，以及池化层（Pooling）。  
-- 卷积神经网络LeNet，复杂的经典 CNN 模型，如 AlexNet、VGGNet、GoogleNet、残差网络（ResNet）、稠密连接网络（DenseNet）等。
+### Convolutional Neural Networks (CNN)
+### Chapter 04
+- Convolutional layers and their common operations, as well as pooling layers.
+- The LeNet convolutional neural network, and complex classic CNN models, such as AlexNet, VGGNet, GoogleNet, Residual Network (ResNet), Dense Connectivity Network (DenseNet), etc.
   
-Chapter 05
-- 新的卷积方式，如逐点卷积、深度卷积、深度可分离卷积等。
-- 新的模型，如Yolo、Unet、MobileNet等。  
+### Chapter 05
+- New convolution methods, such as pointwise convolution, depthwise convolution, depthwise separable convolution, etc.
+- New models, such as Yolo, Unet, MobileNet, etc.
 
-### 循环神经网络（RNN）  
+### Recurrent Neural Networks (RNN)
 - 针对序列数据，介绍序列建模、文本数据预处理等基础知识。  
 - 讲解循环神经网络原理、随时间反向传播算法以及基础 RNN 的代码实现。  
 - 探讨长期依赖问题，并介绍复杂循环神经网络结构，如深度循环神经网络、双向循环神经网络、门控循环单元（GRU）、长短时记忆网络（LSTM）及其代码实现。  
 - 还涉及编码器 - 解码器网络、序列到序列学习代码实现、束搜索算法以及机器翻译与相关数据集等内容。  
 
-### 注意力神经网络  
+### Attention Neural Networks
 - 阐述注意力机制的基本概念、计算方式，包括键值对注意力和多头注意力、自注意力机制。  
 - 给出注意力池化及代码实现，详细讲解 Transformer 模型及其代码实现。  
 - 进一步介绍复杂注意力神经网络模型，如 BERT 模型、GPT 系列（GPT2/GPT3）、T5 模型、ViT 模型、Swin Transformer 以及 GPT 代码实现等内容。  
 
-### 生成模型与应用  
+### Generative Models and Applications
 - 介绍深度生成模型相关知识，如蒙特卡洛方法、变分推断、变分自编码器、生成对抗网络（GAN）、Diffusion 扩散模型。  
 - 包含计算机视觉领域的项目实战，如自定义数据增强、迁移学习、经典视觉数据集应用，以及“猫狗大战（Dogs vs. Cats）”项目实战。  
 - 在自然语言处理方面，涉及词嵌入（如 word2vec）、词义搜索、预训练语言模型、HuggingFace 库介绍、经典 NLP 数据集以及“电影评论情感分析”项目实战。  
 
-### 前沿内容  
+### Cutting-edge Content
 - 介绍多模态 AI 及内容生成相关模型，如 Instruct GPT（ChatGPT）、Dall - E 模型。  
 - 分析深度学习最新发展趋势，并给出下一步学习建议。  
 
-## 4. 联系信息
-若你有任何问题或想交流深度学习相关话题，可通过以下方式联系我：
-- **邮箱**：[zhn0504@outlook.com](mailto:zhn0504@outlook.com)
-- **GitHub**：欢迎访问我的 [GitHub 主页](https://github.com/zhn0504)。在这个代码库的 GitHub 仓库页面，你可以进行以下操作：
-    - **查看代码**：直接在仓库中浏览代码文件，了解项目的具体实现。
-    - **提交 Issue**：如果发现代码存在问题、有功能需求或者有任何疑问，都可以在 [Issues 页面](https://github.com/your_github_username/your_repo_name/issues) 提交新的 Issue。
-    - **发起 Pull Request**：若你对代码有改进建议，欢迎 Fork 本仓库，进行修改后发起 Pull Request，我们一起完善这个项目。
+## 4. Contact Information
+If you have any questions or want to discuss topics related to deep learning, you can contact me through the following methods:
+- **Email**：[zhn0504@outlook.com](mailto:zhn0504@outlook.com)
+- **GitHub**：Welcome to visit my [GitHub Profile](https://github.com/zhn0504). On the GitHub repository page of this code repository, you can perform the following operations:
+    - **View the Code**：Browse the code files directly in the repository to understand the specific implementation of the project.
+    - **Submit an Issue**：If you find problems with the code, have feature requests, or any questions, you can submit a new issue on the [Issues Page](https://github.com/your_github_username/your_repo_name/issues).
+    - **Initiate a Pull Request**：If you have suggestions for improving the code, you are welcome to Fork this repository, make modifications, and then initiate a Pull Request. Let's improve this project together.
  
-## 5. 版权声明
-本项目中的代码和文档仅供学习和参考使用，未经授权，请勿用于商业用途。
+## 5. Copyright Notice
+The code and documents in this project are for learning and reference only. Without authorization, please do not use them for commercial purposes.
