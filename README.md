@@ -7,8 +7,7 @@ This code repository aims to document my learning journey in the field of deep l
 ```plaintext
 .
 ├── Deep_Learning_Code/  # Contains theoretical learning and experimental codes
-│   ├── Chapter-00/
-    ├── Chapter-01/
+│   ├── Chapter-01/
     ├── Chapter-02/
     ...
 ├── datasets/            # Datasets (Some large files are downloaded via Baidu Netdisk links)
@@ -19,11 +18,7 @@ This code repository aims to document my learning journey in the field of deep l
 ## 3. Learning Content
 This repository covers the following content: 
 
-### 3.1 Prerequisite 
-#### Chapter 00
-- Foundation of Mathematics and Python (some learning materials)
-
-### 3.2 Neural Networks
+### 3.1 Neural Networks
 #### Chapter 01 
 - The basic principles of neural networks and the structure of the Multi-Layer Perceptron (MLP).
 - Forward propagation and backpropagation. 
@@ -33,7 +28,7 @@ This repository covers the following content:
 - Common problems during the training process, such as overfitting and underfitting. Corresponding countermeasures are introduced, including regularization, Dropout and their code implementations. It also covers the problems of vanishing gradients and exploding gradients, as well as the read and write operations of model files.
 - Gradient descent algorithms and their various variants, such as Stochastic Gradient Descent, Mini-Batch Gradient Descent, Momentum Method, AdaGrad Algorithm, RMSProp/Adadelta Algorithm, Adam Algorithm, etc. There are also examples of gradient descent algorithms and related content of learning rate schedulers.
 
-### 3.3 Convolutional Neural Networks (CNN)
+### 3.2 Convolutional Neural Networks (CNN)
 #### Chapter 04
 - Convolutional layers and their common operations, as well as pooling layers.
 - The LeNet convolutional neural network, and complex classic CNN models, such as AlexNet, VGGNet, GoogleNet, Residual Network (ResNet), Dense Connectivity Network (DenseNet), etc.
@@ -42,23 +37,23 @@ This repository covers the following content:
 - New convolution methods, such as pointwise convolution, depthwise convolution, depthwise separable convolution, etc.
 - New models, such as Yolo, Unet, MobileNet, etc.
 
-### 3.4 Recurrent Neural Networks (RNN)
+### 3.3 Recurrent Neural Networks (RNN)
 - For sequential data, basic knowledge such as sequential modeling and text data preprocessing is introduced.
 - The principles of recurrent neural networks, the backpropagation through time algorithm, and the code implementation of basic RNNs are explained.
 - The problem of long-term dependencies is explored, and complex recurrent neural network structures are introduced, such as deep recurrent neural networks, bidirectional recurrent neural networks, Gated Recurrent Unit (GRU), Long Short-Term Memory Network (LSTM) and their code implementations.
 - It also involves encoder-decoder networks, code implementation of sequence-to-sequence learning, beam search algorithm, as well as machine translation and related datasets.
 
-### 3.5 Attention Neural Networks
+### 3.4 Attention Neural Networks
 - The basic concepts and calculation methods of the attention mechanism are elaborated, including key-value pair attention, multi-head attention, and self-attention mechanism.
 - Attention pooling and its code implementation are given, and the Transformer model and its code implementation are explained in detail.
 - Further introduction of complex attention neural network models, such as BERT model, GPT series (GPT2/GPT3), T5 model, Vision Transformer (ViT) model, Swin Transformer, and the code implementation of GPT, etc.
 
-### 3.6 Generative Models and Applications
+### 3.5 Generative Models and Applications
 - Deep generative models, such as Monte Carlo method, variational inference, variational autoencoders, Generative Adversarial Networks (GAN), and Diffusion models.
 - Practical projects in the field of computer vision, such as custom data augmentation, transfer learning, application of classic visual datasets, and the practical project of "Dogs vs. Cats".
 - In nlp, it involves word embeddings (such as word2vec), semantic search, pre-trained language models, introduction of the HuggingFace library, classic NLP datasets, and the practical project of "Sentiment Analysis of Movie Reviews". 
 
-### 3.7 Cutting-edge Content
+### 3.6 Cutting-edge Content
 - Introduction to multi-modal AI and related content generation models, such as Instruct GPT (ChatGPT), Dall-E model.
 - Analysis of the latest development trends in deep learning, and suggestions for the next step of learning are given.
 
